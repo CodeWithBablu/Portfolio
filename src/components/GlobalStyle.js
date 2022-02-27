@@ -10,6 +10,8 @@ const GlobalStyle = createGlobalStyle`
 
     body{
         background: #1b1b1b;
+        font-family: 'Inter', sans-serif;
+
     }
 
     button{
@@ -17,13 +19,14 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.1rem;
         cursor: pointer;
         padding: 1rem 2rem;
-        border: 2px solid #4db68f;
+        border: 3px solid #ff1a53;
         background: transparent;
         color: white;
+        font-family: 'Inter', sans-serif;
         transition: all 0.5 ease;
 
         &:hover{
-            background-color: #4db68f;
+            background-color: #ff1a53;
             color:white;
         }
     }
@@ -39,6 +42,7 @@ const GlobalStyle = createGlobalStyle`
 
     h4{
         font-weight: bold;
+        font-size: 2rem;
     }
 
     a{
@@ -47,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
 
     span{
         font-weight: bold;
-        color: #23d997;
+        color: #ff1a53;
     }
 
     p{
@@ -58,5 +62,7 @@ const GlobalStyle = createGlobalStyle`
 
 
 `
+
+// font-family: 'Lobster', cursive;
 
 export default GlobalStyle;

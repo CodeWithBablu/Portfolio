@@ -1,7 +1,7 @@
 //import AboutUS-components
-import AboutSection from "../components/AboutSection"
-import ServicesSection from "../components/ServicesSection";
-import FaqSection from "../components/FaqSection";
+import AboutSection from "../components/AboutUs/AboutSection"
+import ServicesSection from "../components/AboutUs/ServicesSection";
+import FaqSection from "../components/AboutUs/FaqSection";
 
 const AboutUs= () =>{
 
