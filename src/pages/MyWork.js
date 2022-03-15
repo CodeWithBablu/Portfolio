@@ -51,10 +51,31 @@ const Work= styled.div`
     flex-direction: column;
     align-items: center;
     color: white;
+    overflow: hidden;
 `
 
 const Movie = styled.div`
     padding-bottom: 10rem;
+
+    h2{
+        color: black;
+        padding: 2rem 0rem;
+    }
+
+    .line{
+        width: 100%;
+        height: 3.5px;
+        background: white;
+        margin: 2rem 0rem;
+    }
+
+    img{
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+    }
+
+
 `
 
 export default MyWork;

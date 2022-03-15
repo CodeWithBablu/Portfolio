@@ -1,13 +1,16 @@
 //import Global style
 import GlobalStyle from "./components/GlobalStyle";
 import Nav from "./pages/Nav";
+
 //import all pages
 import AboutUs from "./pages/AboutUs"
 import ContactUs from "./pages/ContactUs";
 import MyWork from "./pages/MyWork";
+import MovieDetails from "./pages/MovieDetails";
 
 //Router
 import { Routes, Route } from "react-router-dom"
+
 
 function App() {
   return (
@@ -16,11 +19,25 @@ function App() {
       <Nav/>
       <Routes>
 
-        <Route path="/" element={<AboutUs/>} />
+        {/* //<< For About-us Page */}    
+          <Route path="/" element={<AboutUs/>} />   
+        {/* About-us End //>>*/}
 
-        <Route path="/contact" element={<ContactUs/>}/>
-          
-        <Route path="/mywork" element={<MyWork/>} />
+
+        {/* //<< For Contact-us Page */}
+          <Route path="/contact" element={<ContactUs/>}/>
+        {/* Contact-us End //>>*/}
+            
+
+        {/* //<< For Mywork Page */}
+          <Route path="/mywork" element={<MyWork/>} />
+
+              {/* Child Routes */}
+              <Route path="/mywork/:id" element={<MovieDetails/>} />
+        
+        {/* MyWork End //>>*/}
+
+
 
       </Routes>
     </div>
